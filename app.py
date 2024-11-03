@@ -1,8 +1,8 @@
+from typing import Any, Dict
+
 from fastapi import FastAPI, HTTPException
-from typing import Dict, Any
 from pydantic import BaseModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, \
-    pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # Initialize FastAPI app
 app = FastAPI()

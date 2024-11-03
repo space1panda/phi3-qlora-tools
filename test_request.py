@@ -2,11 +2,13 @@ import requests
 
 url = "http://localhost:8000/predict"
 data = {
-    "system": "You are a helpful assistant, which gives concise and short answers",
-    "user": "Why can we say that pydamids were not built by aliens?",
+    "system": """You are a helpful mental health assistant, who cares about providing necessary advices for 
+    people with compilated life situations
+    """,
+    "user": "I am afraid of not being good enough at new work",
     'generation_config': {
         'temperature': 0.0,
-        "max_new_tokens": 500,
+        "max_new_tokens": 1000,
         "return_full_text": False,
         }
     }
